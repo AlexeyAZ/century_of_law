@@ -1,0 +1,105 @@
+.sec2 {
+    background-image: url("../img/sec2-bg.png");
+    background-position: center top;
+    margin-top: -35%;
+    padding-bottom: 40%;
+
+    @include media(w500) {
+        margin-top: -30%;
+    }
+    
+    &__btn-block {
+        margin-bottom: 80px;
+    }
+
+    &__heading {
+        margin-bottom: 70px;
+
+        @include media(w1024) {
+            margin-bottom: 50px;
+        }
+
+        @include media(w768) {
+            margin-bottom: 30px;
+        }
+
+        @include media(w500) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include media(w768) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 50px;
+        position: relative;
+        width: 48%;
+
+        @include media(w768) {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        @include media(w500) {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    }
+
+    &__list-img-container {
+        min-height: 120px;
+
+        @include media(w768) {
+            text-align: center;
+            margin-right: 20px;
+            min-height: auto;
+            min-width: 130px;
+        }
+
+        @include media(w500) {
+            opacity: 0.5;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+    &__list-img {
+
+        // @include media(w500) {
+        //     transform: translate(-50%,-50%);
+        //     opacity: 0.5;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        // }
+    }
+
+    &__list-item-heading {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 0;
+
+        @include media(w1024) {
+            font-size: 26px;
+        }
+
+        @include media(w768) {
+            font-size: 22px;
+        }
+    }
+}

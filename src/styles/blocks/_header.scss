@@ -1,0 +1,93 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    @include media(w1024) {
+        padding-top: 30px;
+    }
+	
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(w600) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        @include media(w600) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__logo-img {
+        display: inline-block;
+        width: auto;
+
+        @include media(w1024) {
+            width: 210px;
+        }
+
+        @include media(w768) {
+            width: 160px;
+        }
+    }
+
+    &__about {
+        transform: translate(-50%, -50%);
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        br {
+
+            @include media(w600) {
+                display: none;
+            }
+        }
+
+        @include media(w600) {
+            transform: translate(0, 0);
+            position: static;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__contacts {
+        text-align: right;
+
+        @include media(w1024) {
+
+            br {
+                display: none;
+            }
+        }
+
+        @include media(w600) {
+            text-align: center;
+        }
+    }
+
+    &__phone {
+
+        @include link(white, white);
+        
+        @include media(w1024) {
+            display: none;
+        }
+
+        @include media(w600) {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__get-call {
+        @include link(white, white);
+        border-bottom: 2px dotted white;
+        padding-bottom: 8px;
+    }
+}

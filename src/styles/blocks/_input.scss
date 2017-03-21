@@ -1,0 +1,37 @@
+.input {
+    @include placeholder {
+        color: $input;
+    }
+    background-color: $input-bg;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    border: 1px solid $input-border;
+    color: $input;
+    font-size: 24px;
+    padding: 0 20px 0 60px;
+    height: 78px;
+
+    &_city {
+        background-image: url("../img/sec8-map.png");
+        background-position: left 20px center;
+    }
+
+    &_phone {
+        background-image: url("../img/sec8-icon-phone.png");
+        background-position: left 18px center;
+    }
+
+    @include media(w1024) {
+        font-size: 22px;
+        height: 50px;
+    }
+
+    @include media(w768) {
+        margin-bottom: 30px;
+        width: 340px;
+    }
+
+    @include media(w600) {
+        width: 240px;
+    }
+}
