@@ -89,6 +89,12 @@
     }
 
     &__block-list-item {
+        flex-shrink: 0;
+        width: 50%;
+
+        @include media(w1024) {
+            width: 80%;
+        }
 
         @include media(w768) {
             width: 100%;

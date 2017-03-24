@@ -12,11 +12,57 @@
   </head>
   <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"><symbol id="svg--icon-download" viewBox="0 0 32 30.7"><path class="ast0" d="M16 12.8v17"/><path class="ast1" d="M20.5 25.8l-4.6 4.4-4.4-4.4m0-6.5h-7s-4-.6-4-5.5 5-6 5-6-.4-2.3 1-3c2.6-1.4 4 1 4 1s3.1-6.9 9-5 5 8 5 8 7.1-.5 7 5.3c-.1 5.7-5 5.2-5 5.2h-6"/></symbol></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <p class="heading heading_xs form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="input form__input" type="text" name="name" placeholder="Ваше имя">
+          <input class="input form__input" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="input form__input" type="email" name="email" placeholder="Ваш email">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <p class="heading heading_xs form__heading">Спасибо!</p>
+        <p class="text text_xs form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="input incomplete form__input" type="text" name="city" placeholder="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="input form__input" type="text" name="age" placeholder="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="select form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="select form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 - 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 - 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 - 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 - 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 - 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 - 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
     <section class="sec sec1">
       <header class="header">
         <div class="container header__container color-white">
-          <p class="header__about text text_s">Франшиза<br> юридической компании</p><a class="header__logo" href=""><img class="header__logo-img" src="img/header-logo.png" alt=""></a>
-          <div class="header__contacts"><a class="header__phone title title_xs" href="tel:84732324568">+7 (473) 232-45-68</a><br><a class="header__get-call text text_xs" href="">Заказать звонок</a></div>
+          <p class="header__about text text_s">Франшиза<br> юридической компании</p><a class="header__logo" href="/lend/index.html"><img class="header__logo-img" src="img/header-logo.png" alt=""></a>
+          <div class="header__contacts"><a class="header__phone title title_xs" href="tel:84732324568">+7 (473) 232-45-68</a><br><a class="header__get-call text text_xs js-small-btn" href="">Заказать звонок</a></div>
         </div>
       </header>
       <div class="container">
@@ -30,7 +76,7 @@
     <section class="sec sec2">
       <div class="container">
         <div class="btn-block sec2__btn-block ta-center">
-          <p class="text text_xl btn-block__title">Сколько времени и денег нужно на открытие бизнеса? Придётся ли самостоятельно бегать по судам? Узнайте ответы в презентации</p><a class="btn-round btn-block__btn" href=""><span class="btn-round__text">Скачать презентацию</span>
+          <p class="text text_xl btn-block__title">Сколько времени и денег нужно на открытие бизнеса? Придётся ли самостоятельно бегать по судам? Узнайте ответы в презентации</p><a class="btn-round btn-block__btn js-small-btn" href=""><span class="btn-round__text">Скачать презентацию</span>
             <svg class="icon icon-svg--icon-download btn-round__icon">
               <use xlink:href="#svg--icon-download"></use>
             </svg></a>
@@ -74,7 +120,7 @@
         <div class="sec3__btn-block-container">
           <div class="btn-block sec3__btn-block"><img class="sec3__btn-block-img" src="img/sec3-money.png" alt="">
             <p class="heading heading_s btn-block__title">В итоге с каждого вложенного миллиона застройщики незаконно зарабатывают</p>
-            <p class="heading heading_xl btn-block__subtitle color-gold">до 200 000 в год!</p><a class="btn-round btn-block__btn sec3__btn" href=""><span class="btn-round__text">Узнать подробнее</span></a>
+            <p class="heading heading_xl btn-block__subtitle color-gold">до 200 000 в год!</p><a class="btn-round btn-block__btn sec3__btn js-small-btn" href=""><span class="btn-round__text">Узнать подробнее</span></a>
           </div>
         </div>
         <p class="heading heading_m ta-center sec3__heading">На защиту обманутых граждан встали узкоспециализированные юридические компании</p>
@@ -88,14 +134,14 @@
         </ul>
       </div>
       <div class="sec3__bottom color-white"><img class="sec3__bottom-img" src="img/sec3-house.png" alt="">
-        <div class="container sec3__bottom-container"><img class="sec3__bottom-logo" src="img/header-logo.png" alt="">
+        <div class="container sec3__bottom-container"><img class="sec3__bottom-logo" src="img/sec3-logo.png" alt="">
           <p class="sec3__bottom-text">защищает интересы дольщиков </p>
           <p class="heading heading_l sec3__bottom-note">уже 10 лет</p>
         </div>
       </div>
     </section>
     <section class="sec sec4">
-      <div class="container ta-center"><a class="btn-round sec4__btn" href=""><span class="btn-round__text">Узнать подробнее</span></a>
+      <div class="container ta-center"><a class="btn-round sec4__btn js-small-btn" href=""><span class="btn-round__text">Узнать подробнее</span></a>
         <p class="heading heading_m sec4__heading">Мы помогаем людям вернуть их деньги и неустойку за срыв сроков сдачи жилья</p>
         <p class="sec4__title">Средние показатели нашей деятельности:</p>
         <ul class="sec4__list">
@@ -118,7 +164,7 @@
       <div class="container ta-center sec5__container">
         <div class="btn-block sec5__btn-block">
           <p class="text text_m btn-block__text">Команда компании – это 20 узких специалистов во всех сферах права. Клиенты выбирают нас за комплексную защиту и возможность следить за движением их дела онлайн.</p>
-          <div class="btn-block__border sec5__btn-block-border">Станьте владельцем компании «Век закона» в своём городе уже через 4 недели<a class="btn-round btn-block__btn sec5__btn-block-btn" href=""><span class="btn-round__text">Узнать подробнее</span></a></div>
+          <div class="btn-block__border sec5__btn-block-border">Станьте владельцем компании «Век закона» в своём городе уже через 4 недели<a class="js-small-btn btn-round btn-block__btn sec5__btn-block-btn" href=""><span class="btn-round__text">Узнать подробнее</span></a></div>
         </div>
         <div class="color-white ta-center">
           <p class="heading heading_m sec5__heading">На защиту обманутых граждан встали узкоспециализированные юридические компании</p>
@@ -153,7 +199,7 @@
     </section>
     <section class="sec sec6">
       <div class="container sec6__container ta-center">
-        <p class="heading heading_s sec6__heading">Узнайте полный состав франшизы из презентации:</p><a class="btn-round btn-block__btn" href=""><span class="btn-round__text">Скачать и узнать</span>
+        <p class="heading heading_s sec6__heading">Узнайте полный состав франшизы из презентации:</p><a class="btn-round btn-block__btn js-small-btn" href=""><span class="btn-round__text">Скачать и узнать</span>
           <svg class="icon icon-svg--icon-download btn-round__icon">
             <use xlink:href="#svg--icon-download"></use>
           </svg></a>
@@ -170,8 +216,8 @@
                 <p class="text text_m">на франшизу</p>
               </li>
               <li class="sec6__block-list-item">
-                <p class="sec6__block-list-heading">95 000 <span>Ᵽ</span></p>
-                <p class="text text_m">на ремонт офиса</p>
+                <p class="sec6__block-list-heading">60 000 <span>Ᵽ</span></p>
+                <p class="text text_m">рублей на аренду офиса и вывеску</p>
               </li>
             </ul>
             <p class="text text_m">Все вложения окупятся уже на второй месяц работы</p><img class="sec6__block-img" src="img/sec7-people.png" alt="">
@@ -184,13 +230,13 @@
       <div class="container sec7__container ta-center">
         <p class="heading heading_m sec7__heading">Откройте бизнес, который будет приносить пользу обществу, а вам – 3 млн рублей чистой прибыли ежегодно</p>
         <div class="btn-block sec7__btn-block">
-          <form class="btn-block__border sec7__btn-block-border">
+          <form class="btn-block__border sec7__btn-block-border js-form-city" id="bottomForm">
             <p class="text text_m sec7__btn-block-text">Все вложения окупятся уже на второй месяц работы.</p>
             <div class="sec7__btn-block-form">
-              <input class="input input_city sec7__btn-block-input" type="text" name="city" placeholder="Ваш город">
-              <input class="input input_phone sec7__btn-block-input" type="text" name="city" placeholder="Ваш телефон">
+              <input class="input input_city sec7__btn-block-input" type="text" name="city" placeholder="Ваш город" required>
+              <input class="input input_phone sec7__btn-block-input incomplete" type="text" name="phone" placeholder="Ваш телефон">
             </div>
-            <button class="btn-round sec7__btn"><span class="btn-round__text">Проверить город</span></button>
+            <button class="btn-round sec7__btn js-submit js-big-btn"><span class="btn-round__text">Проверить город</span></button>
           </form>
         </div>
       </div>
@@ -208,7 +254,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:88635002012">8 863 500-20-12</a><a class="footer__link footer__link_getcall" href="">Заказать звонок</a></div>
+        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:88635002012">8 863 500-20-12</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
       </div>
     </footer>
     <script src="scripts/vendor.js"></script>

@@ -1,0 +1,25 @@
+extends templates/layout
+
+block vars
+    - var title = 'Thanks'
+
+block content
+    section.sec.thanks
+        include templates/header
+        div.container
+            div.thanks__block.ta-center.color-white
+                p.heading.heading_xxl.
+                    <span id="thanksName"></span>наши менеджеры уже занимаются вашей заявкой
+                p.thanks__block-note.
+                    Мы постараемся связаться с Вами  в ближайшее время
+            div.thanks__btn-wrap
+                a(href="").btn-round
+                    span.btn-round__text.
+                        Скачать презентацию
+                    svg.icon.icon-svg--icon-download.btn-round__icon
+                        use(xlink:href="#svg--icon-download")
+                a(href="/lend/index.html").thanks__link.
+                    Вернуться на сайт
+            p.thanks__bottom-text.color-white.ta-center.text.text_l.
+                График работы с 9:00 до 18:00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день
+

@@ -96,6 +96,10 @@
         min-height: 57px;
         width: 48%;
 
+        p {
+            width: 100%;
+        }
+
         @include media(w768) {
             width: 100%;
         }

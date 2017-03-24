@@ -1,0 +1,97 @@
+.form-wrap {
+    transition: 0.5s ease;;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    z-index: -100;
+
+    &_open {
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+    }
+}
+.form-open {
+    overflow: hidden;
+}
+.form-container {
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 50px 50px 60px;
+    width: 430px;
+
+    @include media(w768) {
+        padding: 20px 20px 30px;
+        width: 300px;
+    }
+}
+
+.form {
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        margin-bottom: 50px;
+    }
+
+    &__label {
+        font-size: 17px;
+
+        span {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__select {
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__btn {
+        position: relative;
+
+        &_center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &_size {
+
+            &:after {
+                transform: translateY(-50%);
+                content: "PDF, 13 Mb";
+                color: #a6a6a6;
+                font-family: "PTSans", sans-serif;
+                font-size: 18px;
+                position: absolute;
+                top: 50%;
+                left: calc(100% + 30px);
+                white-space: nowrap;
+
+                @include media(w768) {
+                    font-size: 16px;
+                    left: calc(100% + 20px);
+                }
+            }
+        }
+    }
+}

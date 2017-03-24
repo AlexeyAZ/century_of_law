@@ -3,13 +3,13 @@ section.sec.sec7
         p.heading.heading_m.sec7__heading.
             Откройте бизнес, который будет приносить пользу обществу, а вам – 3 млн рублей чистой прибыли ежегодно
         div.btn-block.sec7__btn-block
-            form.btn-block__border.sec7__btn-block-border
+            form#bottomForm.btn-block__border.sec7__btn-block-border.js-form-city
                 p.text.text_m.sec7__btn-block-text.
                     Все вложения окупятся уже на второй месяц работы.
                 div.sec7__btn-block-form
-                    input(type="text" name="city" placeholder="Ваш город").input.input_city.sec7__btn-block-input
-                    input(type="text" name="city" placeholder="Ваш телефон").input.input_phone.sec7__btn-block-input
-                button.btn-round.sec7__btn
+                    input(type="text" name="city" placeholder="Ваш город" required).input.input_city.sec7__btn-block-input
+                    input(type="text" name="phone" placeholder="Ваш телефон").input.input_phone.sec7__btn-block-input.incomplete
+                button.btn-round.sec7__btn.js-submit.js-big-btn
                     span.btn-round__text.
                         Проверить город
 
