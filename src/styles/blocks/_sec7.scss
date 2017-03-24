@@ -37,7 +37,8 @@
 
     &__btn-block-form {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-bottom: 60px;
         padding: 0 60px;
 
@@ -54,6 +55,7 @@
     }
 
     &__btn-block-input {
+        margin: 0 10px 20px;
         width: 45%;
 
         @include media(w768) {

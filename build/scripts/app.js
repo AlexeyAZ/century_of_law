@@ -45,13 +45,13 @@ $(function () {
         var self = $(this);
         var selfName = self.find("input[name=name]");
         var selfPhone = self.find("input[name=phone]");
-        var selfPhone = self.find("input[name=email]");
+        var selfEmail = self.find("input[name=email]");
         var formData = self.serialize();
         console.log(formData);
 
         $("[name=name1]").val(selfName.val());
         $("[name=phone1]").val(selfPhone.val());
-        $("[name=email1]").val(selfPhone.val());
+        $("[name=email1]").val(selfEmail.val());
 
         $.ajax({
             type: "POST",
