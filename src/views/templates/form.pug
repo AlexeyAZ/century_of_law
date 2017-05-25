@@ -1,15 +1,17 @@
 div.form-wrap.form-wrap_small
     div#smallFormContainer.form-container
+        div.form__close
         p.heading.heading_xs.form__heading.
             Оставьте заявку на презентацию франшизы
         form#smallForm.form(data-next="#bigForm")
-            input(type="text" name="name" placeholder="Ваше имя").input.form__input
-            input(type="text" name="phone" placeholder="Ваш телефон").input.form__input
-            input(type="email" name="email" placeholder="Ваш email").input.form__input
+            input(type="text" name="name" placeholder="Ваше имя" required="").input.form__input
+            input(type="text" name="phone" placeholder="Ваш телефон" required="").input.form__input
+            input(type="email" name="email" placeholder="Ваш email" required="").input.form__input
             button.btn-round.form__btn.form__btn_size.js-big-btn.
                 Скачать
 div.form-wrap.form-wrap_big
     div#bigFormContainer.form-container
+        div.form__close
         p.heading.heading_xs.form__heading.
             Спасибо!
         p.text.text_xs.form__descr.
@@ -21,11 +23,11 @@ div.form-wrap.form-wrap_big
             label.form__label
                 span.
                     Введите Ваш город
-                input(type="text" name="city" placeholder="").input.incomplete.form__input
+                input(type="text" name="city" placeholder="" required="").input.incomplete.form__input
             label.form__label
                 span.
                     Введите Ваш возраст
-                input(type="text" name="age" placeholder="").input.form__input
+                input(type="text" name="age" placeholder="" required="").input.form__input
             label.form__label
                 span.
                     Наличие бизнеса / Опыт бизнеса

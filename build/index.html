@@ -14,17 +14,19 @@
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"><symbol id="svg--icon-download" viewBox="0 0 32 30.7"><path class="ast0" d="M16 12.8v17"/><path class="ast1" d="M20.5 25.8l-4.6 4.4-4.4-4.4m0-6.5h-7s-4-.6-4-5.5 5-6 5-6-.4-2.3 1-3c2.6-1.4 4 1 4 1s3.1-6.9 9-5 5 8 5 8 7.1-.5 7 5.3c-.1 5.7-5 5.2-5 5.2h-6"/></symbol></svg>
     <div class="form-wrap form-wrap_small">
       <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
         <p class="heading heading_xs form__heading">Оставьте заявку на презентацию франшизы</p>
         <form class="form" id="smallForm" data-next="#bigForm">
-          <input class="input form__input" type="text" name="name" placeholder="Ваше имя">
-          <input class="input form__input" type="text" name="phone" placeholder="Ваш телефон">
-          <input class="input form__input" type="email" name="email" placeholder="Ваш email">
+          <input class="input form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="input form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="input form__input" type="email" name="email" placeholder="Ваш email" required="">
           <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
         </form>
       </div>
     </div>
     <div class="form-wrap form-wrap_big">
       <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
         <p class="heading heading_xs form__heading">Спасибо!</p>
         <p class="text text_xs form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
         <form class="form" id="bigForm">
@@ -32,10 +34,10 @@
           <input class="js-hidden-phone" type="hidden" name="phone1">
           <input class="js-hidden-phone" type="hidden" name="email1">
           <label class="form__label"><span>Введите Ваш город</span>
-            <input class="input incomplete form__input" type="text" name="city" placeholder="">
+            <input class="input incomplete form__input" type="text" name="city" placeholder="" required="">
           </label>
           <label class="form__label"><span>Введите Ваш возраст</span>
-            <input class="input form__input" type="text" name="age" placeholder="">
+            <input class="input form__input" type="text" name="age" placeholder="" required="">
           </label>
           <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
             <select class="select form__select" name="business">
@@ -233,9 +235,9 @@
           <form class="btn-block__border sec7__btn-block-border js-form-city" id="bottomForm">
             <p class="text text_m sec7__btn-block-text">Все вложения окупятся уже на второй месяц работы.</p>
             <div class="sec7__btn-block-form">
-              <input class="input input_city sec7__btn-block-input" type="text" name="city" placeholder="Ваш город" required>
-              <input class="input input_phone sec7__btn-block-input incomplete" type="text" name="phone" placeholder="Ваш телефон">
-              <input class="input input_phone sec7__btn-block-input" type="text" name="email" placeholder="Ваш e-mail">
+              <input class="input input_city sec7__btn-block-input" type="text" name="city" placeholder="Ваш город" required="">
+              <input class="input input_phone sec7__btn-block-input incomplete" type="text" name="phone" placeholder="Ваш телефон" required="">
+              <input class="input input_phone sec7__btn-block-input" type="text" name="email" placeholder="Ваш e-mail" required="">
             </div>
             <button class="btn-round sec7__btn js-submit js-big-btn"><span class="btn-round__text">Проверить город</span></button>
           </form>

@@ -26,6 +26,21 @@ $(function () {
         }
     });
 
+    // icon animation
+    //$(".sec2__list-item")
+
+    $('.sec2__list-item').viewportChecker({
+        classToAdd: 'item-show'
+    });
+
+    $('.sec3__list-item').viewportChecker({
+        classToAdd: 'item-show'
+    });
+
+    $('.sec4__list-item').viewportChecker({
+        classToAdd: 'item-show'
+    });
+
     //forms
 
     body.on("click", ".js-small-btn", function (e) {
@@ -97,7 +112,7 @@ $(function () {
     body.on("click", function (e) {
         var self = $(e.target);
 
-        if (self.hasClass("form-wrap")) {
+        if (self.hasClass("form-wrap") || self.hasClass("form__close")) {
             body.removeClass("form-open");
             $(".form-wrap").removeClass("form-wrap_open");
         }

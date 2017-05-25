@@ -11,6 +11,9 @@ var plugins = {
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js',
         'bower_components/fancybox/dist/jquery.fancybox.min.js',
+        'bower_components/vivus/dist/vivus.min.js',
+        'bower_components/jquery-drawsvg/public/jquery.drawsvg.min.js',
+        'bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js',
     ],
     css: [
         'bower_components/reset-css/reset.css',

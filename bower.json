@@ -17,6 +17,9 @@
     "reset-css": "^2.2.0",
     "components-font-awesome": "^4.7.0",
     "jquery.inputmask": "^3.3.4",
-    "fancybox": "^3.0.47"
+    "fancybox": "^3.0.47",
+    "vivus": "^0.4.0",
+    "jquery-drawsvg": "^1.1.0",
+    "jQuery-viewport-checker": "^1.8.7"
   }
 }

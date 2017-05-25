@@ -49,6 +49,9 @@
     }
 
     &__list-item {
+        transition: 0.8s ease;
+        transform: translateY(30px);
+        opacity: 0;
         width: 32%;
 
         @include media(w768) {
